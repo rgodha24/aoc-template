@@ -6,16 +6,15 @@
   "main": "index.ts",
   "types": "index.ts",
   "scripts": {
-    "dev": "vitest",
-    "test": "vitest",
-    "test:ui": "vitest --ui",
-    "test:run": "vitest run"
+    "dev": "vitest --ui"
   },
   "devDependencies": {
     "@vitest/ui": "latest",
     "vite": "latest",
     "vitest": "latest",
-    "@types/node": "^18.11.9"
+    "@types/node": "^18.11.9",
+    "utils": "workspace:*",
+    "zod": "^3.19.1"
   },
   "stackblitz": {
     "startCommand": "npm run test:ui"
